@@ -63,7 +63,7 @@
 section.main {
     display: flex;
     width: 98vw;
-    
+    align-items: center;
     justify-content: space-between;
     background: #D7D4FF;
     flex-wrap: wrap;
