@@ -20,6 +20,7 @@
     font-size: 62.5%;
   }
   body {
+      box-sizing: border-box;
     font-size: 1.6rem;
     background: #F9F9F9;
     display: flex;
@@ -59,10 +60,10 @@
   }
   
 
-.main {
+section.main {
     display: flex;
-    width: 100vw;
-    align-items: center;
+    width: 98vw;
+    
     justify-content: space-between;
     background: #D7D4FF;
     flex-wrap: wrap;
@@ -105,10 +106,11 @@
 main {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     background: #F9F9F9;
+    width: 100%;
 }
-main section.cards-container {
+.cards-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +144,7 @@ main section.cards-container {
 }
 
 .contact {
-    width: 100%;
+    width: 98vw;
     height: 750px;
     display: flex;
     justify-content: center;
@@ -150,6 +152,8 @@ main section.cards-container {
     text-align: center;
     background: #D7D4FF;
     margin-top: 150px;
+    padding-bottom: 80px;
+    align-self: center;
 }
 .contact .form {
     width: 471px;
@@ -208,7 +212,7 @@ main section.cards-container {
         margin: 90px 32px 88px 32px;
     }
 
-    main section.cards-container {
+    .cards-container {
         width: 375px;
         height: 2688px;
         margin-bottom: 75px;
