@@ -1,226 +1,252 @@
-/*Variáveis*/
-:root {
-    --bgSite: #d7d4ff;
-    --buttonColor: #6c63ff;
-  
-    --white: #ffffff;
-    --white300: #f9f9f9;
-  
-    --title: #2b2b2b;
-    --text: #555555;
-  }
-  
-  /*Reset*/
-  * {
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  html {
-    font-size: 62.5%;
-  }
-  body {
-      box-sizing: border-box;
-    font-size: 1.6rem;
-    background: #F9F9F9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 0;
-  }
-  ul,
-  ol {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    text-decoration: none;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  button,
-  input {
-    border: 0;
-  }
-  button:focus,
-  input:focus {
-    border: 0;
-  }
-  
-
-section.main {
-    display: flex;
-    width: 98vw;
-    align-items: center;
-    justify-content: space-between;
-    background: #D7D4FF;
-    flex-wrap: wrap;
-    margin-bottom: 150px;
 }
-.text{
-    width: 389px;
-    margin: 136px 100px 100px 101px;
-    
+header {
+    background:#d7d4ff;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 374px;
+    padding: 0 20px;
 }
 .text h1{
-    font-size: 36px;
-    font-family: "Merriweather", sans-serif;
-    line-height: 47px;
-    margin-bottom: 17px;
+    height: 95px;
+    margin-top: 55px; 
+    margin-bottom: 18px;
+    font: 32px "Merriweather";
     color: #2B2B2B;
+    line-height: 47px;
 }
-.text p {
-    font-size: 19px;
-    font-family: "Lato", sans-serif;
-    line-height: 32px;
+.text p{
+    height: 96px;
+    font: 18px "Lato";
     color: #555555;
+    line-height: 32px;
+    margin-bottom:32px;
+    
 }
-.main img {
-    width: 500px;
-    margin-right: 100px;
-}
-
-.text button.btn {
-    background: #6C63FF;
+.text button {
+    border: none;
     width: 155px;
     height: 50px;
+    border-radius: 5px;
+    background-color: #6c63ff;
     color: white;
     font: 20px "Lato";
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 45px;
+    margin-top: 32px;
     cursor: pointer;
 }
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #F9F9F9;
-    width: 100%;
+
+.container img {
+    margin-top: 114px;
+    width: 350px;
+    margin-bottom: 88px;
+}
+/*=============CARDS CONTAINER===================*/
+
+section {
+    
 }
 .cards-container {
+    width: 90vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    width: 1242px;
-    height: 914px;
+    margin: 75px 20px;
+}
+.card-color {
+    height: 222px;
+    width: 340px;
 }
 .card {
-    width: 340px;
-    height: 423px;
-    box-shadow: 0 0 20px rgb(0, 0, 0, 10%);
-    margin-bottom: 60px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 0  20px rgb(0, 0, 0, 20%);
 }
-.card .color {
-    width: 340px;
-    height: 222px;
-    background-color: red;
+.card-text {
+    padding: 24px 30px 31px 30px;
 }
-.content {
-    padding: 30px;
-}
-.content h2 {
+.card-text h3 {
     font: 24px "Merriweather";
-    line-height: 30px;
     color: #2B2B2B;
+    margin-bottom: 26px;
 }
-.content p {
+.card-text p {
     font: 18px "Lato";
-    line-height: 30px;
     color: #555555;
 }
 
+/*============CONTACT===============*/
+
 .contact {
-    width: 98vw;
-    height: 750px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     background: #D7D4FF;
-    margin-top: 150px;
-    padding-bottom: 80px;
-    align-self: center;
+    padding: 83px 0 56px 0 ;
 }
-.contact .form {
-    width: 471px;
-    height: 585px;
-}
-.form h2 {
+.contact h2 {
     font: 32px "Merriweather";
-    line-height: 40px;
     color: #2B2B2B;
-    margin-bottom: 60px;
 }
-.form form {
+.contact form {
+    width: 90vw;
     display: flex;
     flex-direction: column;
-    height: 560px;
-    width: 471px;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 36px;
 }
-.form form input{
+form input {
     width: 100%;
-    height: 64px;
+    height: 60px;
+    padding: 18px 11px;
+    border: none;
     border-radius: 6px;
+    color: #6e7275;
+    margin-bottom: 40px;
     font: 18px "Lato";
-    color: #6E7275;
-    padding: 15px;
 }
-.form form textarea {
+form textarea {
+    width: 100%;
+    padding: 18px 11px;
+    border: none;
     border-radius: 6px;
+    margin-bottom: 45px;
+    color: #6e7275;
     font: 18px "Lato";
-    color: #6E7275;
-    padding: 15px;
     resize: none;
 }
-.form form button {
-    height: 50px;
-    text-align: center;
-    border-radius: 5px;
+form button {
     width: 100%;
-    background-color: #6663FF;
-    font: 20px "Lato";
+    height: 50px;
+    background: #6c63ff;
     color: white;
-    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    font: 20px "Lato";
     cursor: pointer;
+
 }
 
-@media screen and (max-width: 1193px) {
-    .main {
+@media screen and  (min-width: 710px ){
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text {
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 354px;
+        padding: 0 15px 0 20px;
     }
-    .main .text {
-        margin: 55px 46px 20px;
-    }
-    .main img {
-        width: 350px;
-        margin: 90px 32px 88px 32px;
-    }
+
+    /*==========CARDS=========*/
 
     .cards-container {
-        width: 375px;
-        height: 2688px;
-        margin-bottom: 75px;
-        justify-content: center;
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 150px 0 100px 0;
+        padding: 0 20px;
+    }
+    .container img {
+        width: 340px;
+        margin-bottom: 88px;
+        margin-right: 20px;
     }
 
-    .form form {
-        padding: 20px;
+    .card-color {
+        height: 222px;
+        width: 100%;
     }
+    .card {
+        width: 340px;
+    }
+    .contact {
+        width: 100%;
+    }
+    .contact form {
+        width: 471px;
+        align-items: center;
+
+    }
+    .contact form input,
+    .contact form textarea,
+    .contact form button {
+        width: 60%;
+        
+    }
+
 }
 
+@media screen and (min-width: 1240px ){
+    header {
+        padding: 77px 100px 120px 100px;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 1236px;
+        height: 364px;
+    }
+    .container img {
+        width: 500px;
+    }
+
+    /*=========CARDS========*/
+
+    .cards-container {
+        width: 1242px;
+        height: 914px;
+        display: flex;
+        margin: 150px 90px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card {
+        width: 340px;
+        height: 423px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-text {
+        height: 211px;
+    }
+
+    .contact form {
+        width: 471px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contact form {
+        width: 471px;
+    }
+    .contact form input {
+        width: 100%;
+    }
+    .contact form textarea {
+        width: 100%;
+    }
+}
